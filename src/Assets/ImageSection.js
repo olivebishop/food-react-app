@@ -8,7 +8,7 @@ export default class ImageSection extends Component {
     return (
       <div className='container'>
         <div className='image'>
-        <img src={Food}/>
+        <img src={Food} alt="" />
         </div>
         <div className='text'>
         <h3>food app</h3>

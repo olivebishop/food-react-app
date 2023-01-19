@@ -11,17 +11,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <BrowserRouter>
       <div>
-        <Header />
+        {isLoggedIn ? <h1>Logout</h1> : <Header />}
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/Login" element={<Login/>}/>
+            <Route path="/Login" element={<Login loginStatus={ {isLoggedIn, setIsLoggedIn} }/>}/>
             <Route path="/Register" element={<Register/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
           </Routes>

@@ -3,7 +3,7 @@ import "../../css/Login.css";
 
 import { useNavigate  } from "react-router-dom";
 
-function Login() {
+function Login(props) {
     const navigate = useNavigate();
     const [username, setUsername] = useState('john');
     const [email, setEmail] = useState('');
@@ -12,6 +12,8 @@ function Login() {
         e.preventDefault();
         /*console.log(username);*/
         navigate('/dashboard');
+        props.loginStatus.setIsLoggedIn(true);
+        console.log(props.loginStatus.isLoggedIn);
     }
     return (
         <div className="container">
