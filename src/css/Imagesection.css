@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+    
+.text{
+    font-size: 20px;
+    padding-left: 20px;
+
+
+
+}
+.image{
+    max-width: 100%;
+    max-height:100%;
+
+}
+.about{
+    padding-bottom: 90px;
+    font-size: 20px;
+}

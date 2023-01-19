@@ -1,0 +1,10 @@
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #5cf1bb;
+    padding: 120px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

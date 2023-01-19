@@ -1,0 +1,10 @@
+.Dashboard h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 350px;
+
+}
+.Dashboard{
+    padding: 100px;
+}
